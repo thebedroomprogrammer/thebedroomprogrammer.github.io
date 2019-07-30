@@ -1,20 +1,26 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
+  repo: thebedroomprogrammer/thebedroomprogrammer.github.io
 
+publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "post"
+    label: "Post"
     folder: "src/content"
     create: true
     slug: "{{slug}}"
+    preview_path: "{{slud}}"
     editor:
      preview: true
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "relation" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list" }
