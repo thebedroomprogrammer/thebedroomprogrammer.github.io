@@ -18,7 +18,7 @@ collections:
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "relation",default: "Ghost"}
+      - { label: "Author", name: "author", widget: "relation", default: "Ghost"}
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
