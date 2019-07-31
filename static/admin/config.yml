@@ -2,7 +2,7 @@ backend:
   name: git-gateway
 
 publish_mode: editorial_workflow
-media_folder: static/uploads
+media_folder: src/content/img
 
 collections:
   - name: "post"
