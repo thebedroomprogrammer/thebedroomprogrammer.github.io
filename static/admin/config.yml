@@ -4,8 +4,7 @@ backend:
   repo: thebedroomprogrammer/thebedroomprogrammer.github.io
 
 publish_mode: editorial_workflow
-media_folder: static/img
-public_folder: /img
+media_folder: static/uploads
 
 collections:
   - name: "post"
@@ -13,11 +12,11 @@ collections:
     folder: "src/content"
     create: true
     slug: "{{slug}}"
-    preview_path: "{{slud}}"
+    preview_path: "{{slug}}"
     editor:
      preview: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "relation",default: "Ghost"}
       - { label: "Publish Date", name: "date", widget: "datetime" }
