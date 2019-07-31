@@ -1,7 +1,5 @@
 backend:
-  name: github
-  branch: master
-  repo: thebedroomprogrammer/thebedroomprogrammer.github.io
+  name: git-gateway
 
 publish_mode: editorial_workflow
 media_folder: static/uploads
